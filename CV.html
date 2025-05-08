@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <title>CV</title>
+    <style>
+        body{
+            background: #fff0f5;
+            color: #4b2e2e;
+            
+        }
+        section{
+            padding: 30px;
+            background: #fffaf8;
+            border-radius: 20px;
+            background: #fffaf8;
+            box-shadow: 0 0 12px rgba(255, 182, 193, 0.3);
+            border: 2px solid #f7c1d3;
+        }
+        h1.title{
+            text-align: center;
+            margin-bottom: 50px;
+            color: #d88c9a;
+        }
+        h2.section-title{
+            color: #d88c9a;
+            border-bottom: 1px dashed#f3c3d3;
+            display: inline-block;
+            margin: 25px;
+        }
+        img{
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border:4px solid#d88c9a;
+        }
+        .cv-romantic,
+        .cv-sidebar,
+        .cv-modern {
+            page-break-before: always;
+        }
+        .info{
+            background: #f3c3d3;
+            border: 3px dashed#d88c9a;
+        }
+        .sidebar img{
+            width: 130px;
+            height: 130px;
+        }
+        @media print{
+            .btn-print,.navigation{
+                display: none !important;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"> Trois modèles de CV</h1>
+        <div class="navigation text-center mb-5">
+            <a href="#cv1" class="btn btn-outline-danger m-2">cv1 Classique</a>
+            <a href="#cv2" class="btn btn-outline-danger m-2">cv2 Navigation</a>
+            <a href="#cv3" class="btn btn-outline-danger m-2">cv3 Responsive</a>
+            
+        </div>
+        <section id="cv1">
+            <button class=" btn btn-outline-danger">Télécharger le CV</button>
+            <div class="text-center">
+                <img src="image.jpg" width="100" alt="image">
+                <h2>Gabriel LOKO</h2>
+                <p class="fst-italic">Illustration poétique et création d'émotions visuelles</p>
+            </div>
+            <h2 class="section-title">Compétences </h2>
+            <div>
+                <ul>
+                    <li>Dev Web</li>
+                    <li>Dev Mobile</li>
+                    <li>Microsoft</li>
+                    <li>Cyberattaque</li>
+                </ul>
+            </div>
+            <h2 class="section-title">Expériences</h2>
+            <p><strong>Indépendant</strong>- depuis 2008</p>
+            <h2 class="section-title">Formation/ Diplôme</h2>
+            <p><strong>Master</strong> - 2021</p>
+            <p><strong>License</strong> - 2019</p>
+            <p><strong>BAC</strong> - 2016</p>
+            <p><strong>CEP</strong> - 2021</p>
+        </section>
+
+        <section id="cv2" class="cv-sidebar d-flex">
+            <button onclick="printSection" class="btn btn-outline-danger">Générer mon CV</button>
+            <div class="info text-center">
+                <img src="profil.jpg" width="100" alt="image">
+                <h4>HOUETO Lauris alias Big-Bolo</h2>
+                <p class="fst-italic">Hacker et Développeur Web</p>
+                <hr>
+                <p><strong>lauris@gmail.com</strong><br>+229 01 90 81 75 75</p>
+                <p>Porto-Novo / Adjarra</p>
+                <br>
+                <ul class="list-unstyled">
+                    <li>Français</li>
+                    <li>Anglais</li>
+                    <li>Espagnol</li>
+                </ul>
+            </div>
+            <div class="ps-4">
+                <h2 class="section-title">Profil</h2>
+                <p>Innovent,sensible et fou amoureux des codes...</p>
+                <h2 class="section-title">Compétences</h2>
+                <ul>
+                    <li>Hacker</li>
+                    <li>Dev Web</li>
+                    <li>Créateur de logiciels et App Mobile</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section id="cv3" class="cv-sidebar d-flex">
+            <button onclick="printSection('cv3')" class="btn btn-outline-danger">Générer mon CV</button>
+            <div class="text-center">
+                <img src="image.jpg" width="100" alt="image">
+                <h2>Angela</h2>
+                <p class="fst-italic">Sensible à l'Esthétique douce</p>
+            </div>
+            <h2 class="section-title">Profil</h2>
+
+
+       
+    </div>
+
+    
+        
+</body>
+</html>
